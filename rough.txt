@@ -1,0 +1,13 @@
+return res.end(`
+    <html>
+        <head></head>
+            <body> 
+                <ol>
+                    ${allurls
+                        .map(url =>
+                        `<li>${url.shortId} - ${url.redirectURL} - ${url.visitHistory.length} </li`
+                       ).join("")}
+                </ol>
+            </body>
+    </html
+    `)
